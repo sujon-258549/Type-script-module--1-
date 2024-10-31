@@ -30,7 +30,7 @@
         userName: string
     }
     type Admin ={
-        userSkills:string[];
+        adminSkills:string[];
         adminUser:'isAdmin';
         userName:string
     }
@@ -39,6 +39,7 @@
 
     const mainadmin:Mainadmin ={      // mast be all Main admin user role example userole and admin  all data writin no data writing error this time typescritr !!
         userSkills:['goodCommunicaitn', 'timework'],
+        adminSkills:['hairing user role '],
         normalUseer:'isUser',
         userName:'Md Sujon Mia',
         adminUser:'isAdmin',
