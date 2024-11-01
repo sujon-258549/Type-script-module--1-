@@ -22,7 +22,7 @@
             return
         }
     }
-    gramtoKg(100)
+  const result1=   gramtoKg(100) as number | string // as  use number this time use number or use this time string this result string
 
 
 }
