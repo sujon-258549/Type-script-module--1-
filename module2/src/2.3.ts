@@ -33,7 +33,7 @@
             role: 'admin'
         }
 
-        
+
     ]
 
 
@@ -42,8 +42,18 @@
     // fast system
     const manePluse: [string, string] = ['male', 'female']
 
+    // secend system
+    type ManpluseTopol<X, Y> = [X, Y]
+    const manePluse2: ManpluseTopol<string, string> = ['male', 'female']
 
+    // example 
+    
+    const userInfo:ManpluseTopol<number,{name:string; home:string; role:string; phone:number}> = [150,{name:'sujon', home:'Rangpur', role:'admin', phone:179087652}]
 
+    // const userInfo: ManpluseTopol<number, { name: string; home: string; role: string; phone: number }> = [
+    //     150,
+    //     { name: 'sujon', home: 'Rangpur', role: 'admin', phone: 179087652 }
+    // ];
 
 
 
