@@ -37,6 +37,24 @@
     type Height = AreaofNumber['height']
 
 
+    const task = (name: string, age: number, role: 'admin' | 'gest' | 'user') => {
+        console.log(`Name : ${name} Age : ${age}, Youe Role : ${role}`);
+
+    }
+
+    task('sujon', 150, "admin")
+    const mainNumber = (input: string) => {
+        return input.split('').reverse().join('')
+    }
+
+    // const mainNumber = (input: string) => {
+    //     return input.split('').reverse().join("");
+    // }
+
+    const mainInput = mainNumber('hellow')
+    console.log(mainInput)
+
+
     // 
     // 
 }
