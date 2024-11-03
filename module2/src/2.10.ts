@@ -47,12 +47,21 @@
         return input.split('').reverse().join('')
     }
 
-    // const mainNumber = (input: string) => {
-    //     return input.split('').reverse().join("");
-    // }
+    const mainNumber2 = (input: string) => {
+        return input.split('').reverse().join("");
+    }
 
-    const mainInput = mainNumber('hellow')
-    console.log(mainInput)
+    const mainInput = mainNumber2('hellow')
+
+
+    // use reduse method
+    const data = (...inputData: number[]): number => {
+        return inputData.reduce((number1, numner2) => number1 + numner2)
+    }
+
+    const inputpostData = data(1, 5, 48, 45, 8, 45, 15, 4, 2, 54, 12, 154, 8, 5, 4)
+
+    console.log(inputpostData)
 
 
     // 
