@@ -61,9 +61,14 @@
 
     const inputpostData = data(1, 5, 48, 45, 8, 45, 15, 4, 2, 54, 12, 154, 8, 5, 4)
 
-    console.log(inputpostData)
+    // console.log(inputpostData)
 
-
+    
+    const dataInput = <S>(value:S)=>{
+        return  value
+    }
+const inputData = dataInput<number>( 1500)
+console.log(inputData)
     // 
     // 
 }
