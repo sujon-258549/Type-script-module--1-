@@ -3,15 +3,16 @@
 
 
     class Parentclass {
-        name: string;
-        age: number;
-        email: string;
+        // name: string;
+        // age: number;
+        // email: string;
 
 
-        constructor(name: string, age: number, email: string) {
-            this.name = name;
-            this.age = age;
-            this.email = email;
+        constructor(public name: string,public age: number,public email: string) {
+            // super(name, age, email)
+            // this.name = name;
+            // this.age = age;
+            // this.email = email;
 
         }
 
