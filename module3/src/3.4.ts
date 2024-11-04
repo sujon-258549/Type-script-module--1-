@@ -37,22 +37,6 @@
     }
 
 
-
-
-
-
-    // const getAnimol = (animal: Animal) => {
-    //     if (animal instanceof Dog) {
-    //         animal.makeEthingTime(5);
-    //     }
-    //     else if( animal instanceof Cat){
-    //         animal.makeSleepTime(25555555555555)
-    //     }
-    //     else{
-    //         animal.makeSound('dus dus dus')
-    //     }
-    // }
-    // 
     //use smart way
     const catget = (animal: Animal): animal is Cat => {
         return animal instanceof Cat
@@ -62,10 +46,10 @@
     }
 
     const getAnimol = (animal: Animal) => {
-        if (catget()) {
+        if (dogget(animal)) {
             animal.makeEthingTime(5);
         }
-        else if (dogget) {
+        else if (catget(animal)) {
             animal.makeSleepTime(25555555555555)
         }
         else {
