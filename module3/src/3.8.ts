@@ -78,6 +78,10 @@
     inputData(shep)
     inputData(metarscore)
     inputData(hapmetar)
+
+
+
+    
     // const area = new Metarscore(5, 5)
     // console.log(area.getInput())
 
