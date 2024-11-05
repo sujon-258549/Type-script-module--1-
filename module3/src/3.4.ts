@@ -1,7 +1,5 @@
 {
     // instanof ooperation
-
-
     class Animal {
         constructor(public name: string, public spaces: string) {
 
