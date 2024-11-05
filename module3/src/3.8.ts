@@ -56,16 +56,28 @@
         }
     }
 
+    class Hapmetar extends Calculate {
+
+        constructor(public height: number, public width: number) {
+            super()
+        }
+        getInput(): number {
+            return .5 * this.height * this.width
+        }
+    }
+
     const inputData = (params: Calculate) => {
 
         return console.log(params.getInput())
     }
 
     const shep = new Shape(10)
-    const metarscore = new Metarscore(10,10)
+    const metarscore = new Metarscore(5, 10)
+    const hapmetar = new Hapmetar(5, 10)
 
     inputData(shep)
     inputData(metarscore)
+    inputData(hapmetar)
     // const area = new Metarscore(5, 5)
     // console.log(area.getInput())
 
