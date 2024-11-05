@@ -48,7 +48,7 @@
     }
     class Metarscore extends Calculate {
 
-        constructor(public height: number, public width:number) {
+        constructor(public height: number, public width: number) {
             super()
         }
         getInput(): number {
@@ -56,8 +56,18 @@
         }
     }
 
-    const area = new Metarscore(5,5)
-    console.log(area.getInput())
+    const inputData = (params: Calculate) => {
+
+        return console.log(params.getInput())
+    }
+
+    const shep = new Shape(10)
+    const metarscore = new Metarscore(10,10)
+
+    inputData(shep)
+    inputData(metarscore)
+    // const area = new Metarscore(5, 5)
+    // console.log(area.getInput())
 
     // 
 }
