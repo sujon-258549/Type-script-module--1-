@@ -18,7 +18,7 @@
     }
 
     const allManSleepingTime = (time: Parson) => {
-         time.getSleep()
+        time.getSleep()
     }
 
 
@@ -30,6 +30,34 @@
     allManSleepingTime(parson)
     allManSleepingTime(student)
     allManSleepingTime(develoer)
+
+
+    class Calculate {
+        getInput() {
+            return 0
+        }
+    }
+    class Shape extends Calculate {
+
+        constructor(public radious: number) {
+            super()
+        }
+        getInput(): number {
+            return Math.PI * this.radious * this.radious
+        }
+    }
+    class Metarscore extends Calculate {
+
+        constructor(public height: number, public width:number) {
+            super()
+        }
+        getInput(): number {
+            return this.height * this.width
+        }
+    }
+
+    const area = new Metarscore(5,5)
+    console.log(area.getInput())
 
     // 
 }
