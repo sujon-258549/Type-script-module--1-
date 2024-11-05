@@ -11,9 +11,10 @@
 
         }
 
+        // use get operatior
         get Balanse() {
             return console.log(this._balance)
-        }
+        }// use set operator
         set Balanses(input: number) {
             console.log(this._balance += input)
         }
