@@ -3,7 +3,7 @@
     let anything: any;
     anything = 'This is any thing'; //string
     anything = 222; // numner
-    (anything as string)  // use number sugest number and use string sagetion number type 
+    (anything as string)// use number sugest number and use string sagetion number type 
 
 
     const gramtoKg = (value: string | number | undefined): (string | number | undefined) => {
