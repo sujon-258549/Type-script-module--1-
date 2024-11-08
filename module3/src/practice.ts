@@ -68,5 +68,38 @@
     const main = functionData({ name: 'sujon', age: 22 })
     console.log(main)
 
+
+    // more genaric function.................................................................
+    const GenarikFunction = <M>(...param: M[]): M[] => {
+        return param
+    }
+
+    const inputFunction = GenarikFunction<{ name: string, phone: number }>(
+        {
+            name: 'sujon',
+            phone: 50
+        }
+    )
+    const inputFunction2 = GenarikFunction<{ name: string, phone: number }>(
+        {
+            name: 'sujon',
+            phone: 50
+        },
+        {
+            name: 'sujon',
+            phone: 50
+        },
+        {
+            name: 'sujon',
+            phone: 50
+        },
+        {
+            name: 'sujon',
+            phone: 50
+        }
+    )
+
+    console.log( inputFunction2)
+
     // 
 }
