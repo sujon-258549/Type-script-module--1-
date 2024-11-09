@@ -43,7 +43,7 @@
         }
     }
 
-    const data = checkDataFunction(true)
+    // const data = checkDataFunction(true)
 
 
     // ganerik main concept is no frist no type use use input insert type /////////
@@ -52,7 +52,7 @@
     type DynamicType<T> = T[];
     const name: DynamicType<string> = ['sujon', 'mia', 'sujon']
     const roll: DynamicType<number> = [2, 15, 5]
-    console.log(roll)
+    // console.log(roll)
     // genarik type object
     type DynamicObject<X> = X;
     const userInfo: DynamicObject<{ name: string; role: string }> = {
@@ -66,7 +66,7 @@
     }
 
     const main = functionData({ name: 'sujon', age: 22 })
-    console.log(main)
+    // console.log(main)
 
 
     // more genaric function.................................................................
@@ -99,7 +99,26 @@
         }
     )
 
-    console.log( inputFunction2)
+    // console.log(inputFunction2)
 
+
+    interface Users {
+        name: string;
+        age: number;
+        home: string
+    }
+
+    const userData = <O, K extends keyof O>(obj: O, kye: K): O[K] => {
+        return obj[kye]
+    }
+
+    const inputObject: Users = {
+        name: 'sujon',
+        age: 22,
+        home: "klkldsfj"
+    }
+
+    const inputdata = userData(inputObject,'home')
+    console.log(inputdata)
     // 
 }
